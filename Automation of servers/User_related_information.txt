@@ -1,0 +1,60 @@
+########################See a User all Properties######################################
+
+Get-ADUser ishu.samant -Properties *
+
+######################See a User Specific Properties############################################
+
+Get-ADUser ishu.samant -Properties * | Select whenCreated, PasswordLastSet, LastLogonDate,
+AccountLockoutTime
+
+########################################Search all User in Locked State#############################################
+
+Search-ADAccount -LockedOut | select name
+
+###############################################Unlock a User#############################################
+
+Unlock-ADAccount –Identity ishu.samant
+
+####################################Disable User##########################################
+
+Disable-ADAccount -Identity ishu.samant
+
+###################################Search all Disable User#######################################
+
+Search-ADAccount -AccountDisabled | select name
+
+##############################Enable the User#######################################
+
+Enable-ADAccount -Identity ishu.samant
+
+#######################Search any user in Domain############################################
+
+Get-Aduser -Filter {name -like "*ishu*"}
+
+########################Search any user in OU################################################
+
+Get-ADUser -SearchBase “OU=IT,dc=ishan,dc=com” -Filter {name -like "*ishu*"}
+
+#########################Set a User Password to Never Expire###################################
+
+Set-ADUser -Identity ishu.samant -PasswordNeverExpires $true
+
+######################Get All Users with Password Set to Never Expire############################
+
+Get-ADUser -filter * -properties Name, PasswordNeverExpires | where {$_.passwordNeverExpires -eq
+"true" } | Select-Object DistinguishedName,Name,Enabled
+
+##########################Force Password to be Changed at Next Login#####################################
+
+Set-ADUser -Identity ishu.samant -ChangePasswordAtLogon $true
+
+########################Move a Single User to a New OU####################################################
+
+Get-ADUser ishu.samant -Properties * | select DistinguishedName
+
+Move-ADObject -Identity "CN=ishu samant,CN=Users,DC=ishan,DC=com" -TargetPath
+"OU=IT,DC=ishan,DC=com"
+
+##################################Set User Attributes###########################################
+
+Set-ADUser ishui.samant -city LETTERKENNY -EmployeeID 11408 -Department IT

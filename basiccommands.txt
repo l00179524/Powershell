@@ -1,0 +1,24 @@
+#################################Below are some of the basic commands illustrated for power shell ##############################################
+
+$PSVersiontable-------------------->>> To check the version of power shell 
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -------------------------> To set the execution policy 
+
+get-module -ListAvailable---------------------------> This Command generally gives idea of total modules available
+
+mkdir PowerShell---------------------------> This commands creates a new directory called as Powershell in my users home directory  C:\Users\ishan>
+
+mi PowerShell D:\---------------------------> This commands moves the directory PowerShell to D drive
+
+
+
+
+###########Installing Nuget to work with the repo###############################
+Install-PackageProvider Nuget -MinimumVersion 2.8.5.201 -Force | Out-Null
+
+
+##########################Installation of  the modules #######################################################
+Install-Module -Name PowerShellGet -Force -AllowClobber
+
+
+

@@ -1,0 +1,29 @@
+###########################################Output  ##############################################
+
+
+Below is the sample output received after downloading and Installation of Power Shell 
+
+
+C:\Windows\System32>pwsh
+PowerShell 7.4.0
+PS C:\Windows\System32> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      7.4.0
+PSEdition                      Core
+GitCommitId                    7.4.0
+OS                             Microsoft Windows 10.0.22621
+Platform                       Win32NT
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0…}
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+WSManStackVersion              3.0
+
+PS C:\Windows\System32> whoami
+ishan\ishan
+PS C:\Windows\System32> date
+
+21 December 2023 18:59:52
+
+PS C:\Windows\System32>

@@ -1,0 +1,46 @@
+####################Several commands on types with output received are mentioned below ##########################################################
+
+
+######Upper to lower###########################
+PS C:\Users\ishan> $a_str = "Yoo hoo!"
+PS C:\Users\ishan> $a_str.ToUpper()
+YOO HOO!
+PS C:\Users\ishan> $a_str.ToLower()
+yoo hoo!
+
+
+############For arrays###################################
+PS C:\Users\ishan> $a_arrays = 1,2,3,4,5
+PS C:\Users\ishan> $a_arrays[1]
+2
+
+#######################For data types###########################################
+PS C:\Users\ishan> $L_Nos = 9999
+PS C:\Users\ishan> $L_Nos.GetType()
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Int32                                    System.ValueType
+
+PS C:\Users\ishan> $B_nos = 98694689980089
+PS C:\Users\ishan> $B_nos.GetType()
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Int64                                    System.ValueType
+
+PS C:\Users\ishan> [float]$Floaty32 = 24.12
+PS C:\Users\ishan> $Floaty32.GetType()
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Single                                   System.ValueType
+
+PS C:\Users\ishan> [double]$Floaty64 = 98694.9999
+PS C:\Users\ishan> $Floaty64.GetType()
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Double                                   System.ValueType
+
+PS C:\Users\ishan>

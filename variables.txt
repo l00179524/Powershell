@@ -1,0 +1,94 @@
+###########################Examples on Variables ################################
+
+
+####Command Runned#############
+
+PS C:\Users\ishan> $a=1,2,"ishan","jordan"
+
+####Output#############
+PS C:\Users\ishan> $a
+1
+2
+ishan
+jordan
+PS C:\Users\ishan>
+
+
+PS C:\Users\ishan> Clear-Variable -Name a
+PS C:\Users\ishan> $a
+PS C:\Users\ishan>
+PS C:\Users\ishan> Remove-Variable -Name a
+
+
+#############Command runned ####################
+$a = 1, 2, "a", "££"
+$a.GetType()
+
+##########Output########################
+
+PS C:\Users\ishan> $a.GetType()
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+True     True     Object[]                                 System.Array
+
+PS C:\Users\ishan>
+
+
+
+
+##########Command runned#################
+
+
+PS C:\Users\ishan> [int]$a = 1
+PS C:\Users\ishan> $a = "123456789"
+
+
+############Output###############
+
+PS C:\Users\ishan> $a
+123456789
+PS C:\Users\ishan>
+
+
+
+
+
+
+#############Command runned for directory listing ##################################
+
+
+
+$dir_lis = Get-ChildItem c:\
+$dir_lis
+
+
+
+
+########Output received###############################
+
+
+PS C:\Users\ishan> $dir_lis
+
+    Directory: C:\
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          01-11-2023    12:09                $WINDOWS.~BT
+d----          30-08-2022    09:51                Apps
+d----          14-12-2023    21:36                dell
+d----          30-08-2022    10:16                Drivers
+d----          30-08-2022    10:14                e-logo
+d----          21-12-2023    17:37                iacpracticals
+d----          09-12-2023    10:13                Intel
+d----          07-05-2022    06:24                PerfLogs
+d----          21-12-2023    18:36                PowerShell
+d-r--          21-12-2023    18:49                Program Files
+d-r--          14-12-2023    21:36                Program Files (x86)
+d-r--          14-09-2023    12:18                Users
+d----          14-12-2023    21:36                Windows
+
+PS C:\Users\ishan>
+
+
+

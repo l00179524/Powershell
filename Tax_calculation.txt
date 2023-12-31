@@ -1,0 +1,16 @@
+#############################Tax calculation code #####################################################
+
+PS C:\Users\ishan> $NET = 222222
+PS C:\Users\ishan> $VAT_applicable = 0.23
+PS C:\Users\ishan> $VATAMOUNT = $NET * $VAT_applicable
+PS C:\Users\ishan> $GROSS = $NET + $VATAMOUNT
+PS C:\Users\ishan> $text = "The total $GROSS is the sum of the net value $amount with the VAT amount $VATAMOUNT at $VAT% VAT rate"
+PS C:\Users\ishan> $text
+
+
+
+#############Below is the output received###################
+
+PS C:\Users\ishan> $text
+The total 273333.06 is the sum of the net value  with the VAT amount 51111.06 at % VAT rate
+PS C:\Users\ishan>

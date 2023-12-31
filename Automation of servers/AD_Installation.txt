@@ -1,0 +1,23 @@
+##############################Below are the Steps for Ad Insatllations ########################################
+
+a)) Type sconfig on command prompt
+
+
+b)) Type “2” and give computer name as DC
+
+c)) Type “8” and then type index number like 1
+
+d)) Type “1” and Type “s” to give static IP
+
+
+e)) Type "2" and set DNS and Press “4” to return
+
+f)) Type Powershell
+
+
+
+#######Commands Tested for Ad Installations ############################################################
+
+install-windowsfeature ad-domain-services -includemanagementtools
+Test-ADDSForestInstallation -domainname ishan.com
+Install-ADDSForest -domainname ishan.com
