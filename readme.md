@@ -1,7 +1,7 @@
 #####################################PowerShell_assingment2 #########################################################
 
 The goal of this assignment is to gain hands-on experience with Power Shell commands and codes while focusing on automation point of view.
-So,all the exercise have been carried out practically  and the main repository on Github is 'l00179524_powershell'
+So,all the exercise have been carried out practically  and the main repository on Github is 'https://github.com/l00179524/powershell'
 Several Exercise such as from Installtion Of Power shell to Setuing Up a domain controller in VM-Ware workstation 17 Pro on 
 windows 2016 server operating system and configuring users and Ou  have been performed.
 
